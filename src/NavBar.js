@@ -4,13 +4,31 @@ import React, {useState} from 'react';
 //initializing button as washer 
 
 
+
 //adding states for dryer button
-export default function NavBar() {
+ export default function NavBar() {
     const [appliance, setAppliance] = useState('Washer');
 
+    function ApplianceSwitch () {
+        if ((appliance) == 'Dryers'){
+            setAppliance("Washer")
+        } 
+        if ((appliance) == 'Washer'){
+            setAppliance("Dryers")
+        } 
+
+        
+        
+    }
     return (
-    <div> 
-        <button type="button" onClick = {setAppliance("dryer")} > { appliance }</button>
+        <div> 
+        <ul>
+            <img src="./uab.jpg" height="50" width="50" alt="picture of blaze the dragon"></img>
+            <li> Home</li>
+            <li> About</li>
+            <li> Feedback </li>
+            <button type="button" onClick= {ApplianceSwitch}> { appliance }</button>
+        </ul>
     </div> 
     )
 }
