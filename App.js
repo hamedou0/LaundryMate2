@@ -22,25 +22,22 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
      <Flex justifyContent='flex-start' p={4} >
-    <div>
-        <Card bg='blue.400'>
-          <CardBody>
-            <Text>LaundryMate</Text>
-          </CardBody>
-        </Card>
-    </div>
-    </Flex> 
-     
-     <div>
-     
-     <Example/> <Sidebar/>
-     
-     
-     
-
-     </div>
-     
-     
+        <div>
+            <Card bg='blue.400'>
+              <CardBody>
+                <Text>LaundryMate</Text>
+              </CardBody>
+          </Card>
+        </div>
+    </Flex>
+    <Flex>
+        <div>
+          <Example/>
+         </div>
+       <div>
+          <Sidebar/>
+        </div> 
+    </Flex>
       
     </ChakraProvider>
   );
