@@ -12,30 +12,23 @@ export default function SideBar() {
         <Card>
         
       
-        <CardBody>
+        <CardBody width={700} >
           <Stack divider={<StackDivider />} spacing='4'>
             <Box>
-              <Heading size='xs' textTransform='uppercase'>
-                Summary
-              </Heading>
-              <Text pt='2' fontSize='sm'>
-                View a summary of all your clients over the last month.
+              
+              <Text pt='-3' fontSize='xl' Fon>
+                Gold Hall Washer 34 Has Opened Up!
               </Text>
             </Box>
             <Box>
-              <Heading size='xs' textTransform='uppercase'>
-                Overview
-              </Heading>
-              <Text pt='2' fontSize='sm'>
-                Check out the overview of your clients.
+              
+              <Text pt='-3' fontSize='xl'>
+                Blazer Hall Dryer 12 Has Opened Up!
               </Text>
             </Box>
-            <Box>
-              <Heading size='xs' textTransform='uppercase'>
-                Analysis
-              </Heading>
-              <Text pt='2' fontSize='sm'>
-                See a detailed analysis of all your business clients.
+            <Box>           
+              <Text pt='-3' fontSize='xl'>
+               Blount Hall Washer 5 Is In Use.
               </Text>
             </Box>
           </Stack>
